@@ -1,0 +1,20 @@
+nav.navbar.navbar-default
+  .container-fluid.container
+    .navbar-header
+      button.navbar-toggle.collapsed type="button" data-toggle='collapse' data-target="#bs-example-navbar-collapse-1" aria-expanded="false"
+        span.sr-only Toggle navigation
+        span.icon-bar
+      a.navbar-brand Remote
+    .collapse.navbar-collapse.navbar-collapse-new
+      ul.nav.navbar-nav
+        li
+          = link_to '招聘', ''
+      ul.nav.navbar-nav.navbar-right
+        li class="dropdown"
+          a id="dLabel" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false"
+            //= image_tag current_user.logo_url, class: 'img-circle layout-user-img'
+            = current_user.name
+            span class="caret"
+          ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"
+            li
+              = link_to '退出', destroy_user_session_path, :method=>'delete'

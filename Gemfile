@@ -5,6 +5,7 @@ gem 'sqlite3'
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'font-awesome-sass', '~> 4.4.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -12,20 +13,18 @@ gem 'jbuilder', '~> 2.0'
 gem 'pg'
 gem 'devise', '>= 3.5.1'
 gem 'cancancan'
-gem 'kaminari'
 gem 'slim-rails'
-gem 'simple_form'
-gem 'enumerize'
-gem 'aasm'
 gem 'rails-i18n'
-
+#分页
+gem 'kaminari'
+#表单
+gem 'simple_form'
 #爬虫
 gem 'anemone'
 # soft destroy
 gem "paranoia", "~> 2.0"
 gem 'carrierwave'
-
-gem 'font-awesome-sass'
+#编辑器
 gem 'simditor-rails'
 gem 'faker'
 gem 'factory_girl_rails'

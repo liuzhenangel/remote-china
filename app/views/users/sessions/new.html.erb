@@ -1,0 +1,16 @@
+<div class='row'>
+  <div class='col-md-4'></div>
+  <div class='col-md-4'>
+    <h2>登录</h2>
+
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <%= f.input :email, required: true, autofocus: true %>
+      <%= f.input :password, required: true %>
+      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+
+      <div class="form-actions">
+        <%= f.button :submit, "登录" %>
+      </div>
+    <% end %>
+  </div>
+</div>
